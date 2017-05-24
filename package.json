@@ -21,9 +21,8 @@
     "currency"
   ],
   "license": "MIT",
-  "description": "> This is an example file with default selections.",
+  "description": "Conversation of one currency to the other",
   "dependencies": {
-    "superagent": "3.5.2"
   },
   "devDependencies": {
     "ava": "0.19.1"

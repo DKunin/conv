@@ -1,0 +1,31 @@
+{
+  "name": "conv",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkunin/conv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkunin/conv/issues"
+  },
+  "scripts": {
+    "pretty": "prettier --single-quote --tab-width 4 --write ./*.js",
+    "start": "node ./",
+    "test": "ava"
+  },
+  "homepage": "https://github.com/dkunin/conv",
+  "keywords": [
+    "convert,",
+    "currency"
+  ],
+  "license": "MIT",
+  "description": "> This is an example file with default selections.",
+  "dependencies": {
+    "superagent": "3.5.2"
+  },
+  "devDependencies": {
+    "ava": "0.19.1"
+  }
+}

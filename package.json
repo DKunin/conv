@@ -1,5 +1,5 @@
 {
-  "name": "conv",
+  "name": "econv",
   "version": "0.0.1",
   "private": false,
   "main": "index.js",
@@ -21,7 +21,7 @@
     "currency"
   ],
   "license": "MIT",
-  "description": "Conversation of one currency to the other",
+  "description": "Conversation of one currency to the other, econv as in Exchange Conversation",
   "dependencies": {
   },
   "devDependencies": {

@@ -1,17 +1,18 @@
 'use strict';
 
-const http = require('http');
+const https = require('https');
+
 
 module.exports = function(amount, fromCurrency, toCurrency) {
     return new Promise((resolve, reject) => {
         const options = {
-            host: 'api.fixer.io',
-            path: `/latest?symbols=${toCurrency.toUpperCase()}&base=${fromCurrency.toUpperCase()}`,
+            host: 'exchangeratesapi.io',
+            path: `/api/latest?base=${toCurrency.toUpperCase()}&symbols=${fromCurrency.toUpperCase()}`,
             headers: {
                 Accept: 'application/json'
             }
         };
-        http
+        https
             .get(options, function(response) {
                 let str = '';
                 response.on('data', function(chunk) {
@@ -21,7 +22,7 @@ module.exports = function(amount, fromCurrency, toCurrency) {
                 response.on('end', function() {
                     const jsonResult = JSON.parse(str);
                     const { rates } = jsonResult;
-                    const coef = rates[toCurrency.toUpperCase()];
+                    const coef = rates[fromCurrency.toUpperCase()];
                     resolve((Number(amount) * coef).toFixed(2).toString());
                 });
             })

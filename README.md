@@ -1,7 +1,6 @@
 # Conv
 
-> Module for conversation of one currency to the other, using api.fixer.io
-
+> Module for conversation of one currency to the other, exchangeratesapi.io
 
 ## Usage
 

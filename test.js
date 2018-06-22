@@ -10,7 +10,6 @@ test('simple conversation', async t => {
 
 test('decimal conversation', async t => {
     const conv = currency(10.33, 'usd', 'rub');
-    console.log(await conv);
     t.regex(await conv, /\d/);
 });
 

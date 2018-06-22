@@ -1,6 +1,6 @@
 {
   "name": "econv",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "main": "index.js",
   "repository": {
@@ -22,8 +22,7 @@
   ],
   "license": "MIT",
   "description": "Conversation of one currency to the other, econv as in Exchange Conversation",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "ava": "0.19.1"
   }
